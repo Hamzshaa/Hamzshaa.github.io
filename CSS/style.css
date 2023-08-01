@@ -3,34 +3,33 @@
   margin: 0;
   font-family: sans-serif;
 }
+img {
+  width: 100%;
+}
 .blueBG {
   background-color: #195774;
   text-align: center;
   color: white;
-  padding: 40px 0;
+  padding: 30px 0 20px;
 }
 .banner-image img {
   width: 100%;
 }
 .puppies {
-  width: 960px;
+  /* width: 960px; */
   margin: 80px auto;
-  display: flex;
-  justify-content: space-between;
+  width: 80%;
+  /* display: flex; */
+  /* justify-content: space-between; */
 }
-.puppies-image1,
-.puppies-image2,
-.text {
-  width: 33%;
+.puppies > div {
+  margin-bottom: 40px;
 }
-.puppies-image1 img,
-.puppies-image2 img,
-.text div {
-  width: 100%;
-}
+
 .text {
   background-color: #ee4d65;
   height: 317px;
+  display: none;
 }
 .text div {
   padding: 50px 50px 50px 0px;
@@ -44,4 +43,26 @@ h2 {
 footer div {
   padding: 80px 0;
   font-size: 40px;
+}
+
+@media (min-width: 960px) {
+  .puppies {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+  }
+  .text {
+    display: block;
+  }
+
+  .puppies-image1,
+  .puppies-image2,
+  .text {
+    width: 33%;
+  }
+  .puppies-image1 img,
+  .puppies-image2 img,
+  .text div {
+    width: 100%;
+  }
 }
