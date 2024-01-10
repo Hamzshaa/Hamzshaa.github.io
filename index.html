@@ -3,21 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Personal Portfolio</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
 
     <link rel="stylesheet" type="text/css" href="CSS/style.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="CSS/css/font-awesome.min.css"
-    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
-    <!-- ============ Home section ============ -->
+    <!-- ============ Navbar section ============ -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ps-5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Hamza</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav nav-menu">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#services">Services</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
 
     <!-- ============ Home section ============ -->
     <section class="home section" id="home">
@@ -174,7 +210,7 @@
             client expectations.
           </p>
 
-          <a download="" href="{CV}" class="button button--flex">
+          <a download="" href="./assets/CV.pdf" class="button button--flex">
             Download CV
             <svg
               class="button__icon"
@@ -219,7 +255,7 @@
           <div class="skills__box">
             <div class="skills__group">
               <div class="skills__data">
-                <LuBadgeCheck class="bx-badge-check" />CheckIcon
+                <i class="far fa-check-circle bx-badge-check"></i>
 
                 <div>
                   <h3 class="skills__name">HTML</h3>
@@ -228,7 +264,7 @@
               </div>
 
               <div class="skills__data">
-                <LuBadgeCheck class="bx-badge-check" />CheckIcon
+                <i class="far fa-check-circle bx-badge-check"></i>
 
                 <div>
                   <h3 class="skills__name">CSS</h3>
@@ -237,7 +273,7 @@
               </div>
 
               <div class="skills__data">
-                <LuBadgeCheck class="bx-badge-check" />CheckIcon
+                <i class="far fa-check-circle bx-badge-check"></i>
 
                 <div>
                   <h3 class="skills__name">JavaScript</h3>
@@ -248,7 +284,7 @@
 
             <div class="skills__group">
               <div class="skills__data">
-                <LuBadgeCheck class="bx-badge-check" />CheckIcon
+                <i class="far fa-check-circle bx-badge-check"></i>
 
                 <div>
                   <h3 class="skills__name">Bootstrap</h3>
@@ -257,16 +293,16 @@
               </div>
 
               <div class="skills__data">
-                <LuBadgeCheck class="bx-badge-check" />CheckIcon
+                <i class="far fa-check-circle bx-badge-check"></i>
 
                 <div>
-                  <h3 class="skills__name">Git</h3>
+                  <h3 class="skills__name">Tailwind</h3>
                   <span class="skills__level">Intermediate</span>
                 </div>
               </div>
 
               <div class="skills__data">
-                <LuBadgeCheck class="bx-badge-check" /> CheckIcon
+                <i class="far fa-check-circle bx-badge-check"></i>
 
                 <div>
                   <h3 class="skills__name">React</h3>
@@ -282,7 +318,7 @@
           <div class="skills__box">
             <div class="skills__group">
               <div class="skills__data">
-                <LuBadgeCheck class="bx-badge-check" />Icon
+                <i class="far fa-check-circle bx-badge-check"></i>
                 <div>
                   <h3 class="skills__name">Node Js</h3>
                   <span class="skills__level">Intermediate</span>
@@ -290,7 +326,7 @@
               </div>
 
               <div class="skills__data">
-                <LuBadgeCheck class="bx-badge-check" />Icon
+                <i class="far fa-check-circle bx-badge-check"></i>
                 <div>
                   <h3 class="skills__name">MongoDB</h3>
                   <span class="skills__level">Intermediate</span>
@@ -298,7 +334,7 @@
               </div>
 
               <div class="skills__data">
-                <LuBadgeCheck class="bx-badge-check" />Icon
+                <i class="far fa-check-circle bx-badge-check"></i>
 
                 <div>
                   <h3 class="skills__name">RESTful APIs</h3>
@@ -309,7 +345,7 @@
 
             <div class="skills__group">
               <div class="skills__data">
-                <LuBadgeCheck class="bx-badge-check" />Icon
+                <i class="far fa-check-circle bx-badge-check"></i>
 
                 <div>
                   <h3 class="skills__name">MySQL</h3>
@@ -318,8 +354,7 @@
               </div>
 
               <div class="skills__data">
-                <LuBadgeCheck class="bx-badge-check" />Icon
-
+                <i class="far fa-check-circle bx-badge-check"></i>
                 <div>
                   <h3 class="skills__name">Firebase</h3>
                   <span class="skills__level">Intermediate</span>
@@ -327,7 +362,7 @@
               </div>
 
               <div class="skills__data">
-                <LuBadgeCheck class="bx-badge-check" /> Icon
+                <i class="far fa-check-circle bx-badge-check"></i>
 
                 <div>
                   <h3 class="skills__name">Postman</h3>
@@ -475,18 +510,25 @@
 
       <div class="qualification__container container">
         <div class="qualification__tabs">
-          <div class="qualification__button button--flex">
+          <div
+            class="qualification__button button--flex qualification-contents qualification-education"
+          >
             <i class="fas fa-graduation-cap qualification__icon"></i>
             Education
           </div>
-          <div class="qualification__button qualification__active button--flex">
+          <div
+            class="qualification__button qualification__active button--flex qualification-contents qualification-experiance"
+          >
             <i class="fas fa-suitcase qualification__icon"></i>
             Experience
           </div>
         </div>
 
         <div class="qualification__sections">
-          <div class="qualification__content qualification__content-active">
+          <div
+            id="education-history"
+            class="qualification__content qualification__content-active"
+          >
             <div class="qualification__data">
               <div>
                 <h3 class="qualification__title">
@@ -551,9 +593,9 @@
             </div>
           </div>
 
-          <div class="qualification__content">
+          <div id="experience-history" class="qualification__content">
             <div class="center">
-              I currently do not have any prior experience at the moment
+              I currently do not have any prior experience
             </div>
           </div>
         </div>
@@ -722,16 +764,5 @@
         </span>
       </div>
     </footer>
-
-    <a href="https://google.com">GOOGLE</a>
-    <a href="https://google.com">GOOGLE</a>
-    <a href="https://google.com">GOOGLE</a>
-    <a href="https://google.com">GOOGLE</a>
-    <a href="https://google.com">GOOGLE</a>
-    <a href="https://google.com">GOOGLE</a>
-    <a href="https://google.com">GOOGLE</a>
-    <a href="https://google.com">GOOGLE</a>
-    <a href="https://google.com">GOOGLE</a>
-    <a href="https://google.com">GOOGLE</a>
   </body>
 </html>

@@ -168,51 +168,15 @@ img {
   align-items: center;
 }
 
-/* ===================Breakpoints====================== */
-/* for large devices */
-@media screen and (max-width: 992px) {
-  .container {
-    margin-left: var(--mb-1-5);
-    margin-right: var(--mb-1-5);
-  }
+/* ================== Home section ==================*/
 
-  .button {
-    padding: 1rem 1.75rem;
-  }
-
-  .button__icon {
-    width: 22px;
-    height: 22px;
-  }
+.navbar-nav {
+  position: absolute;
+  right: 30px;
 }
 
-/* for medium devices */
-@media screen and (max-width: 768px) {
-  body {
-    margin: 0 0 var(--header-height) 0;
-  }
-
-  .section {
-    padding: 2rem 0 4rem;
-  }
-
-  .section__subtitle {
-    margin-bottom: var(--mb-3);
-  }
-}
-
-@media screen and (max-width: 576px) {
-}
-
-/* for small devices */
-@media screen and (max-width: 350px) {
-  :root {
-    --big-font-size: 2.25rem;
-  }
-  .container {
-    margin-left: var(--mb-1);
-    margin-right: var(--mb-1);
-  }
+.navbar-toggler {
+  border: 0 !important;
 }
 
 /* ================== Home section ==================*/
@@ -332,87 +296,6 @@ img {
   color: var(--title-color);
 }
 
-/* ===================Breakpoints====================== */
-/* for large devices */
-@media screen and (max-width: 992px) {
-  .home__content {
-    grid-template-columns: 100px repeat(2, 1fr);
-    column-gap: 1.25rem;
-  }
-
-  .home__hand {
-    width: 26px;
-    height: 26px;
-  }
-
-  .home__subtitle {
-    padding-left: 3.75rem;
-    margin-bottom: var(--mb-1);
-  }
-
-  .home__subtitle::before {
-    width: 42px;
-    top: 0.8rem;
-  }
-
-  .home__description {
-    max-width: initial;
-    margin-bottom: var(--mb-2-5);
-  }
-
-  .home__img {
-    width: 250px;
-    height: 250px;
-    box-shadow: inset 0 0 0 8px rgb(255 255 255 / 30%);
-  }
-  .home__scroll {
-    margin-left: 7.5rem;
-  }
-}
-
-/* for medium devices */
-@media screen and (max-width: 768px) {
-  .home__content {
-    grid-template-columns: 0.5fr 3fr;
-    padding-top: 3.5rem;
-  }
-
-  .home__img {
-    order: initial;
-    justify-self: initial;
-  }
-
-  .home__data {
-    grid-column: 1/3;
-  }
-
-  .home__img {
-    box-shadow: inset 0 0 0 6px rgb(255 255 255 / 30%);
-    width: 200px;
-    height: 200px;
-  }
-
-  .home__scroll {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 576px) {
-}
-
-/* for small devices */
-@media screen and (max-width: 350px) {
-  .home__img {
-    width: 180px;
-    height: 180px;
-  }
-
-  .home__hand {
-    width: 22px;
-    height: 22px;
-  }
-}
-
 /* ================== About section ==================*/
 
 .about__container {
@@ -461,57 +344,10 @@ img {
   margin-bottom: var(--mb-2-5);
 }
 
-/* ===================Breakpoints====================== */
-/* for large devices */
-@media screen and (max-width: 992px) {
-  .about__container {
-    grid-template-columns: 1fr;
-    row-gap: 2.5rem;
-  }
-
-  .about__img {
-    width: 220px;
-  }
-
-  .about__box {
-    padding: 0.75rem 0.5rem;
-  }
-
-  .about__data {
-    text-align: center;
-  }
-
-  .about__info {
-    justify-content: center;
-  }
-
-  .about__description {
-    padding: 0 5rem;
-    margin-bottom: 2rem;
-  }
-}
-
-/* for medium devices */
-@media screen and (max-width: 576px) {
-  .about__info {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .about__description {
-    padding: 0;
-  }
-}
-
-/* for small devices */
-@media screen and (max-width: 350px) {
-  .about__info {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 /* ================== Skills section ==================*/
 
 .skills__container {
+  display: flex;
   grid-template-columns: repeat(2, 350px);
   column-gap: 3rem;
   justify-content: center;
@@ -561,37 +397,6 @@ img {
 
 .skills__level {
   font-size: var(--tiny-font-size);
-}
-
-/* ================Breakpoints============= */
-/* for large devices */
-@media screen and (max-width: 992px) {
-  .skills__container {
-    grid-template-columns: max-content;
-    row-gap: 2rem;
-  }
-}
-
-/* for medium devices */
-@media screen and (max-width: 576px) {
-  .skills__container {
-    grid-template-columns: 1fr;
-  }
-
-  .skills__content {
-    padding: 1.5rem;
-  }
-}
-
-/* for small devices */
-@media screen and (max-width: 350px) {
-  .skills__box {
-    column-gap: 1.25rem;
-  }
-
-  .skills__name {
-    font-size: var(--small-font-size);
-  }
 }
 
 /* ================== Services section ==================*/
@@ -713,51 +518,7 @@ img {
 .active-modal {
   opacity: 1;
   opacity: 0;
-  visibility: visible;
-}
-
-/* ===================Breakpoints====================== */
-/* for large devices */
-@media screen and (max-width: 992px) {
-  .services__container {
-    grid-template-columns: repeat(3, 218px);
-  }
-}
-
-/* for medium devices */
-@media screen and (max-width: 768px) {
-  .services__container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .services__content {
-    padding: 3.5rem 0.5rem 1.25rem 1.5rem;
-  }
-
-  .services__icon {
-    font-size: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .services__modal-content {
-    padding: 4.5rem 1.5rem 2.5rem;
-  }
-
-  .services__modal-description {
-    padding: 0;
-  }
-}
-
-/* for small devices */
-@media screen and (max-width: 350px) {
-  .services__container {
-    grid-template-columns: max-content;
-  }
-
-  .services__content {
-    padding-right: 6rem;
-  }
+  /* visibility: visible; */
 }
 
 /* ================== Skills section ==================*/
@@ -847,40 +608,6 @@ img {
   width: 250px;
   margin-inline: auto;
   text-align: center;
-}
-
-/* ============Breakpoints=========== */
-/* for large devices */
-@media screen and (max-width: 992px) {
-  .qualification__container {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-/* for medium devices */
-@media screen and (max-width: 768px) {
-  .qualification__container {
-    margin-left: var(--mb-1-5);
-    margin-right: var(--mb-1-5);
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .qualification__sections {
-    grid-template-columns: initial;
-  }
-
-  .qualification__button {
-    margin: 0 var(--mb-0-75);
-  }
-}
-
-/* for small devices */
-@media screen and (max-width: 350px) {
-  .qualification__data {
-    gap: 0.5rem;
-  }
 }
 
 /* ================== Contact section ==================*/
@@ -992,44 +719,6 @@ img {
   resize: none;
 }
 
-/* ==========Breakpoints========== */
-/* for large devices */
-@media screen and (max-width: 992px) {
-  .contact__container {
-    column-gap: 3rem;
-  }
-}
-
-/* for medium devices */
-@media screen and (max-width: 768px) {
-  .contact__container {
-    grid-template-columns: 1fr;
-    row-gap: 3rem;
-  }
-
-  .contact__info {
-    justify-content: center;
-  }
-
-  .contact__form {
-    margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .contact__info {
-    grid-template-columns: 1fr;
-  }
-
-  .contact__form {
-    width: 100%;
-  }
-}
-
-/* for small devices */
-@media screen and (max-width: 350px) {
-}
-
 /* ================== Footer section ==================*/
 .footer {
   background-color: var(--container-color);
@@ -1088,12 +777,294 @@ img {
   font-size: var(--smaller-font-size);
 }
 
-/* ==============Breakpoint============== */
-/* for large devices */
+/* ================--- BREAKPOINTS ---============= */
+
+/* ==========----- FOR LARGE DEVICES -----========== */
 @media screen and (max-width: 992px) {
+  /* ====== Common for all sections ====== */
+  .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+
+  .button {
+    padding: 1rem 1.75rem;
+  }
+
+  .button__icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  /* ====== Home section ====== */
+  .home__content {
+    grid-template-columns: 100px repeat(2, 1fr);
+    column-gap: 1.25rem;
+  }
+
+  .home__hand {
+    width: 26px;
+    height: 26px;
+  }
+
+  .home__subtitle {
+    padding-left: 3.75rem;
+    margin-bottom: var(--mb-1);
+  }
+
+  .home__subtitle::before {
+    width: 42px;
+    top: 0.8rem;
+  }
+
+  .home__description {
+    max-width: initial;
+    margin-bottom: var(--mb-2-5);
+  }
+
+  .home__img {
+    width: 250px;
+    height: 250px;
+    box-shadow: inset 0 0 0 8px rgb(255 255 255 / 30%);
+  }
+  .home__scroll {
+    margin-left: 7.5rem;
+  }
+
+  /* ====== About section ====== */
+  .about__container {
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+  }
+
+  .about__img {
+    width: 220px;
+  }
+
+  .about__box {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .about__data {
+    text-align: center;
+  }
+
+  .about__info {
+    justify-content: center;
+  }
+
+  .about__description {
+    padding: 0 5rem;
+    margin-bottom: 2rem;
+  }
+
+  /* ====== Skills section ====== */
+  .skills__container {
+    grid-template-columns: max-content;
+    row-gap: 2rem;
+  }
+  .skills__container {
+    display: grid;
+  }
+
+  /* ====== Services section ====== */
+  .services__container {
+    grid-template-columns: repeat(3, 218px);
+  }
+
+  /* ====== Qualification section ====== */
+
+  .qualification__container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ====== Contact section ====== */
+
+  .contact__container {
+    column-gap: 3rem;
+  }
+
+  /* ====== Footer section ====== */
   .footer__social-link {
     padding: 0.25rem;
     border-radius: 0.25rem;
     font-size: 1rem;
+  }
+}
+
+/* ==========----- FOR MEDIUM DEVICES -----========== */
+@media screen and (max-width: 768px) {
+  /* ====== Common for all sections ====== */
+  body {
+    margin: 0 0 var(--header-height) 0;
+  }
+
+  .section {
+    padding: 2rem 0 4rem;
+  }
+
+  .section__subtitle {
+    margin-bottom: var(--mb-3);
+  }
+
+  /* ====== Home section ====== */
+  .home__content {
+    grid-template-columns: 0.5fr 3fr;
+    padding-top: 3.5rem;
+  }
+
+  .home__img {
+    order: initial;
+    justify-self: initial;
+  }
+
+  .home__data {
+    grid-column: 1/3;
+  }
+
+  .home__img {
+    box-shadow: inset 0 0 0 6px rgb(255 255 255 / 30%);
+    width: 200px;
+    height: 200px;
+  }
+
+  .home__scroll {
+    display: none;
+  }
+
+  /* ====== Services section ====== */
+  .services__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services__content {
+    padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+  }
+
+  .services__icon {
+    font-size: 1.5rem;
+  }
+  .services__modal-content {
+    position: initial;
+  }
+
+  /* ====== Qualification section ====== */
+  .qualification__container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+
+  /* ====== Contact section ====== */
+
+  .contact__container {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+
+  .contact__info {
+    justify-content: center;
+  }
+
+  .contact__form {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* ====== About section ====== */
+  .about__info {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .about__description {
+    padding: 0;
+  }
+
+  /* ====== Skills section ====== */
+  .skills__container {
+    grid-template-columns: 1fr;
+  }
+
+  .skills__content {
+    padding: 1.5rem;
+  }
+
+  /* ====== Services section ====== */
+  .services__modal-content {
+    padding: 4.5rem 1.5rem 2.5rem;
+  }
+
+  .services__modal-description {
+    padding: 0;
+  }
+
+  /* ====== Qualification section ====== */
+  .qualification__sections {
+    grid-template-columns: initial;
+  }
+
+  .qualification__button {
+    margin: 0 var(--mb-0-75);
+  }
+
+  /* ====== Contact section ====== */
+  .contact__info {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__form {
+    width: 100%;
+  }
+}
+
+/* ==========----- FOR SMALL DEVICES -----========== */
+@media screen and (max-width: 350px) {
+  /* ====== Common for all sections ====== */
+  :root {
+    --big-font-size: 2.25rem;
+  }
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+
+  /* ====== Home section ====== */
+  .home__img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .home__hand {
+    width: 22px;
+    height: 22px;
+  }
+
+  /* ====== About section ====== */
+  .about__info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ====== Skills section ====== */
+  .skills__box {
+    column-gap: 1.25rem;
+  }
+
+  .skills__name {
+    font-size: var(--small-font-size);
+  }
+
+  /* ====== Services section ====== */
+  .services__container {
+    grid-template-columns: max-content;
+  }
+
+  .services__content {
+    padding-right: 6rem;
+  }
+
+  /* ====== Qualification section ====== */
+  .qualification__data {
+    gap: 0.5rem;
   }
 }
